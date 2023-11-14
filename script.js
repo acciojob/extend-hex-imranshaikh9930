@@ -10,7 +10,7 @@ const extendHex = (shortHex) => {
 
  //    // Add the # prefix to the full hex code
  //    return '#' + fullHex;
-		let arr =[];
+				let arr =[];
 		for(let i = 0 ; i< shortHex.length;i++){
 		  if(shortHex[i] === '#'){
 		    arr.push(shortHex.slice(i+1));
@@ -19,7 +19,7 @@ const extendHex = (shortHex) => {
 		let withOutHex = ""
 		arr.forEach(element => {
 		
-		 withOutHex = element.split("").map(char=>char+char).join("");
+		 withOutHex = element.split("").map(char=>char+char).join("").toLowerCase();
 		  
 		});
 		
